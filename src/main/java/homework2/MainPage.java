@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class MainPage {
     private final SelenideElement NICKNAME = $x("//a[@data-l='t,userPage']");
-    private final SelenideElement MESSAGES_BUTTON = $x("//button[@aria-label='Messages']");
+    private final SelenideElement MESSAGES_BUTTON = $x("//button[@aria-label='Сообщения']");
     private final SelenideElement VIDEO_BUTTON = $x("//a[@aria-label='Видео']");
 
 
