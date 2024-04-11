@@ -8,6 +8,8 @@ public class MainPage {
     private final SelenideElement NICKNAME = $x("//a[@data-l='t,userPage']");
     private final SelenideElement MESSAGES_BUTTON = $x("//button[@aria-label='Сообщения']");
     private final SelenideElement VIDEO_BUTTON = $x("//a[@aria-label='Видео']");
+    private final SelenideElement PHOTO_BUTTON = $x("//a[@data-l='t,userPhotos']");
+    private final SelenideElement RECCOMENDATIONS_BUTTON = $x("//a[@data-l='t,discovery']");
 
 
     public String pushLogin() {
@@ -23,4 +25,14 @@ public class MainPage {
     public void clickVideoButton() {
         VIDEO_BUTTON.shouldBe(visible).click();
     }
+
+    //нажимаем на кнопку "Фото" в левом тулбаре
+    public void clickPhoto(){
+        PHOTO_BUTTON.shouldBe(visible).click();
+    }
+    // нажимаем на кнопку "Рекомендации" в левом тулбаре
+    public void clickRecommendations(){
+        RECCOMENDATIONS_BUTTON.shouldBe(visible).click();
+    }
+
 }
