@@ -16,6 +16,7 @@ public class RecommendationsPage {
     public void check(){
         NEWS_BUTTON.shouldBe(visible);
     }
+
     //открываем раздел "Новости"
     public void clickNews(){
         NEWS_BUTTON.shouldBe(visible).click();

@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class LoginUserTest extends BaseTest {
 
+
     @Test
     public void loginUser(){
         MainPage main = new MainPage();

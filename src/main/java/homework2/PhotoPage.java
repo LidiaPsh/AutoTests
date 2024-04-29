@@ -16,6 +16,7 @@ public class PhotoPage {
     public void check(){
         MY_PHOTO_BUTTON.shouldBe(visible);
     }
+
     //нажимаем на "Личные фотографии"
     public void clickMyPhotos(){
         MY_PHOTO_BUTTON.shouldBe(visible).click();

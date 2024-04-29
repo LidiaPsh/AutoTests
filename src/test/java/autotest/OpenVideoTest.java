@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class OpenVideoTest extends BaseTest {
-
     @Test
     public void openVideoTest() {
         MainPage mainPage = new MainPage();

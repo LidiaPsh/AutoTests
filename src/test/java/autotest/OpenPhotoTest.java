@@ -14,8 +14,6 @@ public class OpenPhotoTest extends BaseTest {
         photo.clickMyPhotos();
         Assertions.assertTrue(photo.getAllPhotosName().contains("Все фото"));
         photo.clickPhotoOpen();
-
-
     }
 
 }

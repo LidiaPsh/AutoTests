@@ -15,7 +15,6 @@ public class MainPage {
 
 
 
-
     public String getFullName() {
         return NICKNAME.shouldBe(visible).getText();
     }

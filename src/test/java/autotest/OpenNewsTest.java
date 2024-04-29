@@ -16,3 +16,4 @@ public class OpenNewsTest extends BaseTest {
         Assertions.assertTrue(recommendationsPage.getNameNewsButton().contains("Новости"));
     }
 }
+
