@@ -14,5 +14,4 @@ public class PhotoPageTest extends MainPageTest {
         photo.clickMyPhotos();
         photo.clickPhotoOpen();
     }
-
 }

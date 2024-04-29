@@ -11,7 +11,6 @@ public class MainPage {
     private final SelenideElement PHOTO_BUTTON = $x("//a[@data-l='t,userPhotos']");
     private final SelenideElement RECCOMENDATIONS_BUTTON = $x("//a[@data-l='t,discovery']");
 
-
     public String pushLogin() {
         return NICKNAME.shouldBe(visible).getText();
     }

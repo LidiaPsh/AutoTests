@@ -5,6 +5,7 @@ import homework2.MessagesPage;
 import org.junit.jupiter.api.Test;
 
 public class MessagesPageTest extends MainPageTest{
+
     @Test
     public void clickMessagesButton(){
         MainPage mainPage = new MainPage();

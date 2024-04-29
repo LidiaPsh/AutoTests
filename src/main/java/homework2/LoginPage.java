@@ -4,6 +4,7 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$x;
 
+
 public class LoginPage {
     private final SelenideElement LOGIN = $x("//input[@name='st.email']");
     private final SelenideElement PASSWORD = $x("//input[@name='st.password']");

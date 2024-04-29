@@ -9,7 +9,6 @@ public class MainPageTest {
     protected static final String PASSWORD = "technopolisPassword";
     protected static final String URL = "https://ok.ru/";
 
-
     @BeforeEach
      public void authorization() {
         Selenide.open(URL);

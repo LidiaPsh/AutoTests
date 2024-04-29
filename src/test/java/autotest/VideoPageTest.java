@@ -5,7 +5,6 @@ import homework2.VideoPage;
 import org.junit.jupiter.api.Test;
 
 public class VideoPageTest extends MainPageTest {
-
     @Test
     public void clickVideoButton() {
         MainPage mainPage = new MainPage();

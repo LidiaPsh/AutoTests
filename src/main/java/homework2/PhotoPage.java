@@ -4,6 +4,7 @@ import static com.codeborne.selenide.Condition.visible;
 import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.$x;
 
+
 public class PhotoPage {
     private final SelenideElement MY_PHOTO_BUTTON = $x("//a[@data-l='t,title']");
     private final SelenideElement PHOTO_OPEN_BUTTON = $x("//img[@id='img_960759367751']");
