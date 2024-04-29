@@ -7,10 +7,23 @@ import static com.codeborne.selenide.Condition.visible;
 
 public class RecommendationsPage {
     private final SelenideElement NEWS_BUTTON = $x("//a[@class='filter_i']");
+    private final SelenideElement ACTIVE_BUTTON = $x("//a[@class='filter_i __active']");
 
+    public RecommendationsPage() {
+        check();
+    }
+
+    public void check(){
+        NEWS_BUTTON.shouldBe(visible);
+    }
     //открываем раздел "Новости"
     public void clickNews(){
         NEWS_BUTTON.shouldBe(visible).click();
     }
 
+    public String getNameNewsButton(){
+        return ACTIVE_BUTTON.shouldBe(visible).getText();
+    }
 }
+
+

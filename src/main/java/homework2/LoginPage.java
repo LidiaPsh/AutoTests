@@ -9,6 +9,16 @@ public class LoginPage {
     private final SelenideElement PASSWORD = $x("//input[@name='st.password']");
     private final SelenideElement ENTER_BUTTON = $x("//input[@type = 'submit']");
 
+    public LoginPage() {
+        check();
+    }
+
+    public void check(){
+        LOGIN.shouldBe(visible);
+        PASSWORD.shouldBe(visible);
+        ENTER_BUTTON.shouldBe(visible);
+    }
+
     //вводим валидный логин
     public void enteringLogin(String login) {
         LOGIN.shouldBe(visible).setValue(login);
