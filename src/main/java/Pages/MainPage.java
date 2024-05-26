@@ -1,4 +1,4 @@
-package homework2;
+package Pages;
 
 import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Condition.visible;
@@ -12,7 +12,7 @@ public class MainPage {
     private final SelenideElement RECCOMENDATIONS_BUTTON = $x("//a[@data-l='t,discovery']");
     private final SelenideElement PROFILE_SETTINGS =$x(".//button[contains(@class,'ucard-mini')]");
     private final SelenideElement LOGOUT =$x(".//*[@data-l='t,logout']");
-
+    private final SelenideElement LOGOUT_BUTTON =$x(".//input[@data-l='t,logout']");
 
 
     public String getFullName() {
@@ -39,10 +39,12 @@ public class MainPage {
         RECCOMENDATIONS_BUTTON.shouldBe(visible).click();
     }
 
+
     // выход из профиля
     public void logOut(){
         PROFILE_SETTINGS.shouldBe(visible).click();
         LOGOUT.shouldBe(visible).click();
+        LOGOUT_BUTTON.shouldBe(visible).click();
     }
 
 }

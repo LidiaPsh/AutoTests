@@ -1,10 +1,10 @@
-package homework2;
+package Pages;
 
 import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$x;
 
-public class LoginPage {
+public class LoginPage implements LoadablePage {
     private final SelenideElement LOGIN = $x("//input[@name='st.email']");
     private final SelenideElement PASSWORD = $x("//input[@name='st.password']");
     private final SelenideElement ENTER_BUTTON = $x("//input[@type = 'submit']");
@@ -13,6 +13,7 @@ public class LoginPage {
         check();
     }
 
+    @Override
     public void check(){
         LOGIN.shouldBe(visible);
         PASSWORD.shouldBe(visible);

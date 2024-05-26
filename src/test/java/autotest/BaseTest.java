@@ -1,8 +1,8 @@
 package autotest;
 
 import com.codeborne.selenide.Selenide;
-import homework2.LoginPage;
-import homework2.MainPage;
+import Pages.LoginPage;
+import Pages.MainPage;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 

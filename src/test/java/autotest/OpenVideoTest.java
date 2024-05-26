@@ -1,7 +1,7 @@
 package autotest;
 
-import homework2.MainPage;
-import homework2.VideoPage;
+import Pages.MainPage;
+import Pages.VideoPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -11,8 +11,8 @@ public class OpenVideoTest extends BaseTest {
         MainPage mainPage = new MainPage();
         mainPage.clickVideoButton();
         VideoPage videoPage = new VideoPage();
-        videoPage.clickMoviesButton();
         Assertions.assertTrue(videoPage.getMoviesName().contains("Фильмы"));
+        videoPage.clickMoviesButton();
         videoPage.clickHomeButton();
     }
 }

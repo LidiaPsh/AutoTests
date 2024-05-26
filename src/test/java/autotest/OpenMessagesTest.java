@@ -1,7 +1,7 @@
 package autotest;
 
-import homework2.MainPage;
-import homework2.MessagesPage;
+import Pages.MainPage;
+import Pages.MessagesPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

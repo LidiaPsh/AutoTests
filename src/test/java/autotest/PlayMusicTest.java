@@ -1,14 +1,12 @@
 package autotest;
 
-import homework2.MainPage;
-import homework2.MusicPage;
+import Pages.MusicPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class MusicPageTest extends MainPageTest {
+public class PlayMusicTest extends BaseTest {
     @Test
-    public void playMusic(){
-
+    public void playMusicTest(){
         MusicPage musicPage = new MusicPage();
         musicPage.clickMusicButton();
         musicPage.playMusic();

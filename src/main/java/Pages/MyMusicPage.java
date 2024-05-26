@@ -1,20 +1,29 @@
-package homework2;
+package Pages;
 
 import com.codeborne.selenide.SelenideElement;
+
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$x;
-import static com.codeborne.selenide.Selenide.sleep;
 
 //проигрывание музыки из раздела "Моя музыка"
-public class MyMusicPage {
-    private final SelenideElement MUSIC_BUTTON = $x("//button[@aria-label='Музыка']");
+public class MyMusicPage implements LoadablePage {
+    private final SelenideElement MUSIC_BUTTON = $x("//li[@data-l='t,music']");
 
-    private final SelenideElement MY_MUSIC = $x("//div[@data-tsid='library']");
+    private final SelenideElement MY_MUSIC = $x("//div[@data-l='t,library']");
     private final SelenideElement SELECT_TRACK = $x("//wm-track[@data-tsid='track']");
-    private final SelenideElement PLAY_TRACK = $x("//wm-icon[@aria-label='Слушать']");
-    private final SelenideElement STOP_TRACK = $x("//wm-icon[@aria-label='Пауза']");
-    private final SelenideElement MY_MUSiC_DURATION = $x("//wm-player-duration[@aria-label='Прогресс']");
+    private final SelenideElement PLAY_TRACK = $x("//wm-icon[@data-l='t,play']");
+    private final SelenideElement STOP_TRACK = $x("//wm-icon[@data-l='t,pause']");
+    private final SelenideElement MY_MUSiC_DURATION = $x("//wm-player-duration[@data-l='t,player']");
 
+
+    public MyMusicPage() {
+        check();
+    }
+
+    @Override
+    public void check() {
+        MUSIC_BUTTON.shouldBe(visible);
+    }
 
     //нажимаем на кнопку "Музыка" в верхнм тулбаре
     public void clickMusicButton() {
